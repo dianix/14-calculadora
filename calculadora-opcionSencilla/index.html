@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    
+</head>
+<body>
+   <form name="calculadora">
+       <label><h2>Calculadora</h2></label>
+       <table>
+          <tr><td colspan="4"><input type="textfield" name="resultado" placeholder="0"></td></tr><br>
+           <tr>
+               <td><input type="button" id="1" value="1" onclick="document.calculadora.resultado.value += 1"></td>
+               <td><input type="button" id="2" value="2" onclick="document.calculadora.resultado.value += 2"></td>
+               <td><input type="button" id="3" value="3" onclick="document.calculadora.resultado.value += 3"></td>
+               <td><input type="button" id="suma" value="+" onclick="document.calculadora.resultado.value += '+'"></td>
+           </tr><br>
+           <tr>
+               <td><input type="button" id="4" value="4" onclick="document.calculadora.resultado.value += 4"></td>
+               <td><input type="button" id="5" value="5" onclick="document.calculadora.resultado.value += 5"></td>
+               <td><input type="button" id="6" value="6" onclick="document.calculadora.resultado.value += 6"></td>
+               <td><input type="button" id="resta" value="-" onclick="document.calculadora.resultado.value += '-'"></td>
+           </tr><br>
+           <tr>
+               <td><input type="button" id="7" value="7" onclick="document.calculadora.resultado.value += 7"></td>
+               <td><input type="button" id="8" value="8" onclick="document.calculadora.resultado.value += 8"></td>
+               <td><input type="button" id="9" value="9" onclick="document.calculadora.resultado.value += 9"></td>
+               <td><input type="button" id="multiplicacion" value="*" onclick="document.calculadora.resultado.value += '*'"></td>
+           </tr><br>
+           <tr>
+               <td><input type="button" id="punto" value="." onclick="document.calculadora.resultado.value += '.'"></td>
+               <td><input type="button" id="0" value="0" onclick="document.calculadora.resultado.value += 0"></td>
+               <td><input type="button" id="igual" value="=" onclick="document.calculadora.resultado.value = eval(document.calculadora.resultado.value)"></td>
+               <td><input type="button" id="division" value="/" onclick="document.calculadora.resultado.value += '/'"></td>
+           </tr>
+           
+       </table>
+   </form>
+</body>
+</html>
